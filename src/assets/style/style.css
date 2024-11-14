@@ -1,0 +1,136 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+body {
+    background: linear-gradient(30deg, #101014, #0a161e);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5vh;
+    padding: 0;
+}
+li {
+    width: 35vh;
+    height: 8vh;
+    background-color: #18181C;
+    text-align: center;
+    border-radius: 10px;
+}
+img {
+    margin: 5vh;
+    border-radius: 10px;
+}
+.container {
+    width: 180vh;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 6vh;
+}
+h3 {
+    font-size: 4.5vh;
+    text-align: center;
+}
+h4 {
+    font-size: 3vh;
+    text-align: center;
+}
+p, a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+header {
+    background-color: #18181C;
+}
+.main-menu ul {
+    margin: 0;
+}
+.uniqueness .images {
+    display: flex;
+    justify-content: center;
+}
+.main-title .container {
+    padding: 50px auto;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+}
+.main-title .desc {
+    position: absolute;
+    width: 65vh;
+}
+.main-title img {
+    width: 140vh;
+    margin-left: 40vh;
+    margin-top: 0;
+    z-index: 1;
+}
+.uniqueness {
+    background: #18181C;
+    padding: 50px;
+}
+.uniqueness h3 {
+    margin-top: 0;
+    margin-bottom: 7vh;
+}
+.uniqueness img {
+    width: 85vh;
+}
+footer .right {
+    text-align: center;
+}
+footer .right p {
+    font-size: 2vh;
+}
+.contact {
+    margin: 0;
+    text-align: center;
+}
+.contact img {
+    margin-top: 0;
+}
+.office p {
+    text-align: center;
+}
+.message-form {
+    background: url(../img/neural-network.jpg) no-repeat;
+    background-size: 180vh;
+    padding: 5vh;
+}
+form {
+    width: 60vh;
+    margin: 0 auto;
+}
+.message form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form_element {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+.message textarea {
+    height: 10vh;
+    min-height: 10vh;
+    max-height: 50vh;
+    resize: vertical;
+}
+.submit {
+    color: white;
+    border: none;
+    background-color: #18181C;
+    border-radius: 10px;
+    cursor: pointer;
+}
