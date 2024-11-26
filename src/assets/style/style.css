@@ -1,0 +1,349 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+.container {
+    margin: 0 auto;
+}
+.icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* HEADER */
+
+.header-menu {
+    display: flex;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 0px #00000014;
+}
+.header-menu nav ul {
+    gap: 24px;
+    padding: 0;
+    margin: 18px auto;
+}
+.header-menu .phones li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.header-menu nav, .phones li:nth-child(1), .phones li:nth-child(2) {
+    display: none;
+}
+.header-menu h1 {
+    color: #2D66EE;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 18px;
+    margin-right: 40px;
+}
+.header-menu .contacts a {
+    color: #2D66EE;
+    gap: 32px;
+}
+.header-menu .phones {
+    gap: 16px;
+}
+.header-menu .phones li:nth-child(2) {
+    margin-right: 32px;
+}
+
+/* MAIN */
+
+.introduction {
+    position: relative;
+}
+.introduction h1 {
+    margin-top: 0;
+}
+.introduction h1, .introduction p {
+    width: 383px;
+}
+.feedback {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    transform: rotate(-12deg);
+}
+.consultation {
+    background: #FFFFFF;
+    width: 676px;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 60px;
+    box-shadow: 0px 0px 24px 0px #00000029;
+}
+.consultation h3 {
+    width: 600px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.consultation form {
+    gap: 24px;
+}
+.consultation button {
+    width: 132px;
+    height: 58px;
+    padding: 0 24px;
+}
+.company-services {
+    background: #FFFFFF;
+    padding: 64px 0;
+}
+.company-services h1 {
+    margin-top: 0;
+}
+.company-services h3 {
+    margin-top: 32px;
+}
+.company-services .container {
+    display: flex;
+}
+.company-services span {
+    color: #2D66EE;
+}
+.company-services .services ul {
+    display: block;
+}
+.company-services .services li {
+    display: flex;
+    align-items: center; 
+    height: 46px;
+}
+.company-services .services li a:hover {
+    color: #000000;
+    text-decoration-color: #2D66EE;
+    font-weight: 600;
+}
+.company-services .services li img {
+    height: 24px;
+    margin-left: 6px;
+}
+.development-industies {
+    height: 32px;
+}
+
+/* FOOTER */
+
+.footer-info {
+    background: #101828;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0px 2px 24px 0px #00000014;
+}
+.footer-info h1, .footer-info h6, .footer-info h5 {
+    color: #FFFFFF;
+}
+.footer-info h1 {
+    margin: 0;
+    text-align: center;
+}
+.footer-info .contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, calc(100% / 4));
+    margin: 26px 0;
+}
+.footer-info .contacts .icon-and-name {
+    display: flex;
+    gap: 8px;
+}
+.footer-info .contacts h6 {
+    margin: 4px 0;
+}
+.footer-info .contacts h5 {
+    margin: 8px 0;
+}
+.footer-info .place {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    height: 16px;
+}
+.footer-info .place h6 {
+    margin: 0;
+}
+
+/* PHONE AND TABLET */
+
+@media (min-width: 424px) and (max-width: 1439px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .header-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, calc(100% / 3));
+    }
+    header .container, footer .container {
+        padding: 0;
+        width: 100vw;
+    }
+    .header-menu .contacts ul {
+        margin: 33px 0;
+        margin-right: 32px;
+    }
+    .feedback {
+        top: 0;
+        right: 0;
+    }
+    .feedback img {
+        height: 930px;
+    }
+    .consultation {
+        width: 386px;
+    }
+    .consultation h3 {
+        width: 295px;
+        font-size: 16px;
+    }
+    .consultation form {
+        display: block;
+    }
+    .consultation form div {
+        margin-bottom: 32px;
+    }
+    .consultation button {
+        width: 155px;
+        height: 40px;   
+        padding: 0;
+        text-align: center;
+    }   
+    .company-services .development-platforms {
+        width: 320px;
+    }
+    .footer-info .contacts h5 {
+        font-size: 14px;
+    } 
+}
+
+/* PHONE */
+
+@media (max-width: 767px) {
+    .container {
+        width: 425px;
+        padding-left: 24px;
+    }
+    .header-menu {
+        margin-top: 20px;
+    }
+    .header-menu .contacts {
+        display: none;
+    }
+    .burger {
+        height: 20px;
+        width: 40px;
+        margin-top: 35px;
+        margin-left: 17px;
+    }
+    .header-menu h1 {
+        margin: auto 0;
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 1267px;
+    }
+    .feedback {
+        top: 380px;
+    }
+    .consultation {
+        margin-top: 135%;
+    }
+    .company-services .container {
+        display: block;
+    }
+    .company-services .services ul {
+        padding: 0;
+        margin-top: 32px;
+    }
+    .footer-info .contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 26px 0;
+        gap: 32px;
+    }
+    .footer-info .contacts article:first-child {
+        margin-bottom: 0;
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+    }
+    .header-menu {
+        margin-top: 16px;
+    }
+    .burger {
+        height: 40px;
+        width: 60px;
+        margin-top: 25px;
+        margin-left: 32px;
+    }
+    .header-menu h1 {
+        margin: auto 0;
+    }
+    .header-menu .contacts {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 768px;
+    }
+    .introduction h1, .introduction p {
+        width: 383px;
+    }
+    .company-services .services {
+        margin-left: 150px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1440px) {
+    .container, header .container {
+        width: 1124px;
+    }
+    .burger {
+        display: none;
+    }
+    .header-menu {
+        height: 52px;
+        margin-top: 24px;
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 900px;
+    }
+    .introduction h1, .introduction p {
+        width: 600px;
+    }
+    .header-menu nav {
+        display: flex;
+    }
+    .feedback {
+        top: -600px;
+    }
+    .feedback img {
+        height: 1980px;
+    }
+    .header-menu nav, .phones li:nth-child(1), .phones li:nth-child(2) {
+        display: flex;
+    }
+    .company-services .development-platforms {
+        width: 480px;
+    }
+    .company-services .services {
+        margin-left: 200px;
+    }
+    .footer-info {
+        margin-bottom: 32px;
+    }
+}
