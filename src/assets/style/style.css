@@ -1,0 +1,429 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+.container {
+    margin: 0 auto;
+}
+.icon-svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* HEADER */
+
+.header-menu {
+    display: flex;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 0px #00000014;
+
+    nav ul {
+        gap: 24px;
+        padding: 0;
+        margin: 18px auto;
+    }
+    .phones {
+        gap: 16px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &:nth-child(1), &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(2) {
+                margin-right: 32px;
+            }
+        }
+    }
+    h1 {
+        color: #2D66EE;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 18px;
+        margin-right: 40px;
+    }
+    .contacts a {
+        color: #2D66EE;
+        gap: 32px;
+    }
+}
+
+/* MAIN */
+
+.introduction {
+    position: relative;
+
+    h1, p {
+        width: 383px;
+    }
+    h1 {
+        margin-top: 0;
+    }
+}
+.feedback {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-12deg);
+
+    .img-block {
+        position: absolute;
+        top: 0;
+        height: 3840px;
+
+        &:first-child {
+            width: 480px;
+            background: url(../img/column-left.webp);
+            right: 220px;
+
+        }
+        &:last-child {
+            width: 293px;
+            background: url(../img/column-right.webp);
+            right: 0;
+        }
+    }
+}
+.consultation {
+    background: #FFFFFF;
+    width: 676px;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 60px;
+    box-shadow: 0px 0px 24px 0px #00000029;
+
+    h3 {
+        width: 600px;
+        margin: 0 0 32px;
+    }
+    form {
+        gap: 24px;
+    }
+    button {
+        width: 132px;
+        height: 58px;
+        padding: 0 24px;
+    }
+}
+.company-services {
+    background: #FFFFFF;
+    padding: 64px 0;
+
+    h1 {
+        margin-top: 0;
+    }
+    h3 {
+        margin-top: 32px;
+    }
+    .container {
+        display: flex;
+    }
+    span {
+        color: #2D66EE;
+    }
+    .services {
+        ul {
+            display: block;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            height: 46px;
+            a:hover {
+                color: #000000;
+                text-decoration-color: #2D66EE;
+                font-weight: 600;
+            }
+            img {
+                height: 24px;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+.development-industries {
+    background: #F2F4F7;
+    height: 32px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #F2F4F7;
+
+    .footer-info {
+        background: #101828;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0px 2px 24px 0px #00000014;
+    
+        h1, h6, h5 {
+            color: #FFFFFF;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .contacts {
+            
+            margin: 26px 0;
+    
+            .icon-and-name {
+                display: flex;
+                gap: 8px;
+            }
+            h6 {
+                margin: 4px 0;
+            }
+            h5 {
+                margin: 8px 0;
+            }
+        }
+        .place {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            height: 16px;
+    
+            h6 {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* PHONE AND TABLET */
+
+@media (min-width: 424px) and (max-width: 1439px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .header-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, calc(100% / 3));
+        
+        h1 {
+            margin: auto 0;
+        } 
+        nav {
+            display: none;
+        }
+        .contacts ul {
+            margin: 33px 32px 0 0;
+        }
+    }
+    header .container, footer .container {
+        padding: 0;
+        width: 100vw;
+    }
+    .feedback {
+        right: 80px;
+        transform: scale(0.5) rotate(-12deg);
+
+        img {
+            height: 930px;
+        }
+    }
+    .consultation {
+        width: 386px;
+
+        h3 {
+            width: 295px;
+            font-size: 16px;
+        }
+        form {
+            display: block;
+
+            div {
+                margin-bottom: 32px;
+            }
+        }
+        button {
+            width: 155px;
+            height: 40px;   
+            padding: 0;
+            text-align: center;
+        }   
+    }
+    .company-services {
+        .development-platforms {
+            width: 320px;
+        }
+    }
+    .footer-info .contacts h5 {
+        font-size: 14px;
+    } 
+}
+
+/* PHONE */
+
+@media (max-width: 767px) {
+    .container {
+        width: 425px;
+        padding-left: 24px;
+    }
+    .header-menu {
+        margin-top: 20px;
+        .contacts {
+            display: none;
+        }
+    }
+    .burger {
+        height: 20px;
+        width: 40px;
+        margin: 35px 0 0 17px;
+    }
+    .header-menu h1 {
+        margin: auto 0;
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 1267px;
+
+        .feedback {
+            top: 380px;
+        }
+    }
+    .feedback {
+        top: 380px;        
+    }
+    .consultation {
+        margin-top: 135%;
+    }
+    .company-services {
+        .container {
+            display: block;
+        }
+        .services ul {
+            padding: 0;
+            margin-top: 32px;
+        }
+    }
+    .footer-info {
+        .contacts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+
+            article:first-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .container {
+        width: 768px;
+        padding-left: 32px;
+    }
+    .header-menu {
+        margin-top: 16px;
+
+        .contacts {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+    .burger {
+        height: 40px;
+        width: 60px;
+        margin: 25px 0 0 32px;
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 768px;
+        
+        h1, p {
+            width: 383px;
+        }
+    }
+    .feedback {
+        top: -80px;
+    }
+    .company-services {
+        .services {
+            margin-left: 150px;
+        }
+    }
+    .footer-info {
+        .contacts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, calc(100% / 4));
+        }  
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1440px) {
+    .container, header .container {
+        width: 1124px;
+    }
+    .burger {
+        display: none;
+    }
+    .header-menu {
+        height: 52px;
+        margin-top: 24px;
+        nav {
+            display: flex;
+        }
+        .phones li:nth-child(1), .phones li:nth-child(2) {
+            display: flex;
+        }
+    }
+    .introduction {
+        padding-top: 160px;
+        height: 900px;
+        h1, p {
+            width: 600px;
+        }
+    }
+    .feedback {
+        top: -150px;
+        right: 100px;
+
+        .img-block {
+            animation: move 10s linear infinite;
+    
+            &:first-child {
+                animation-direction: normal;
+            }
+            &:last-child {
+                animation-direction: reverse;
+            }
+        }
+    }
+    @keyframes move {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 0 100%;
+        }
+    }
+    .company-services {
+        .development-platforms {
+            width: 480px;
+        }
+        .services {
+            margin-left: 200px;
+        }
+    }
+    .footer-info {
+        margin-bottom: 32px;
+
+        .contacts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, calc(100% / 4));
+        }  
+    }
+}
