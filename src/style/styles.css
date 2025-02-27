@@ -1,0 +1,71 @@
+main {
+    display: flex;
+    margin: auto;
+    margin-top: 72px;
+    width: fit-content;
+    gap: 32px;
+    p, h3, button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    .choice {
+        padding: 12px;
+        height: fit-content;
+        width: fit-content;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px 4px rgba(64, 64, 64, 0.2);
+        img {
+            width: 192px;
+        }
+        p, h3 {
+            text-align: center;
+        }
+    }
+    .elements {
+        display: flex;
+        background: rgba(64, 64, 64, 0.2);
+        height: 32px;
+        border-radius: 32px;
+        padding: 4px;
+    }
+    .pizzas {
+        display: flex;
+        gap: 12px;
+        
+    }
+    .size {
+        h3 {
+            margin-top: 0;
+        }
+        .elements {
+            gap: 4px;
+            button {
+                width: 50%;
+                border: none;
+                border-radius: 32px;
+            }
+        }
+    }
+    .topping {
+        height: 314px;
+        .elements {
+            background: none;
+            gap: 12px;
+            article {
+                width: 116px;
+                img {
+                    width: 116px;
+                }
+            }
+        }
+    }
+    .buy {
+        color: white;
+        width: 100%;
+        height: 64px;
+        margin-top: 128px;
+        border-radius: 32px;
+        border: none;
+        background: rgb(228, 124, 13);
+    }
+}
